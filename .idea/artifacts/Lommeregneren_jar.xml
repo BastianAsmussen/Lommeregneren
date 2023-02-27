@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Lommeregneren:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lommeregneren_jar</output-path>
+    <root id="archive" name="Lommeregneren.jar">
+      <element id="module-output" name="Lommeregneren" />
+    </root>
+  </artifact>
+</component>
