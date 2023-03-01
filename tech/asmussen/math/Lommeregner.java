@@ -6,6 +6,7 @@ public class Lommeregner {
 	
 	public static void main(String[] args) {
 		
+		// scanner objektet bruges til at læse inputs fra brugeren i terminalen.
 		Scanner scanner = new Scanner(System.in);
 		
 		try {
@@ -30,8 +31,8 @@ public class Lommeregner {
 			
 			CalculationMethod mode = modes[modeIndex];
 			
-			// Beregn resultatet.
-			System.out.printf("%.2f %s %.2f = %.2f\n", a, mode.toString(), b, calculate(a, b, mode));
+			// Beregn resultatet rundet til 2 decimaler og udskriv det.
+			System.out.printf("Resultatet af %.2f %s %.2f er %.2f.\n", a, mode, b, calculate(a, b, mode));
 			
 		} catch (Exception e) {
 			
@@ -41,6 +42,15 @@ public class Lommeregner {
 		scanner.close();
 	}
 	
+	/**
+	 * Udregn resultatet af a og b med valgte regne metode.
+	 *
+	 * @param a    Det første tal.
+	 * @param b    Det andet tal.
+	 * @param mode Regne metoden.
+	 * @return Resultatet af a og b med valgte regne metode.
+	 * @see CalculationMethod
+	 */
 	public static double calculate(double a, double b, CalculationMethod mode) {
 		
 		return switch (mode) {
@@ -52,15 +62,18 @@ public class Lommeregner {
 		};
 	}
 	
+	/**
+	 * Regne metoder som kan bruges i {@link Lommeregner#calculate(double, double, CalculationMethod)}.
+	 */
 	public enum CalculationMethod {
-		ADD("+"),
-		SUBTRACT("-"),
-		MULTIPLY("*"),
-		DIVIDE("/");
+		ADD('+'),
+		SUBTRACT('-'),
+		MULTIPLY('*'),
+		DIVIDE('/');
 		
-		private final String symbol;
+		private final char symbol;
 		
-		CalculationMethod(String symbol) {
+		CalculationMethod(char symbol) {
 			
 			this.symbol = symbol;
 		}
@@ -68,7 +81,7 @@ public class Lommeregner {
 		@Override
 		public String toString() {
 			
-			return symbol;
+			return String.valueOf(symbol);
 		}
 	}
 }
