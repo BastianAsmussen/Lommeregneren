@@ -1,0 +1,21 @@
+Hvad er dårlige og gode kommentare?
+- Ikke for mange kommentare, hold det mere generaliseret.
+- Hvis du har en metode der hasher et stykke tekst så lad være med at forklare hver eneste linje i detalje, 
+  lav en linje i toppen der forklare hvorfor den er der og hvad den gør på en generaliseret måde, 
+  forklar de vigtige linjer.
+
+Eksempler på dårlig kode i Java:
+  
+  // Dette variabel er brugt til at definere præcis 100 i double format.
+  final double theNumberThatEqualsExactlyOneHundredAndNothingElse = 100.0;
+  
+  // Dette variabel er true.
+  boolean isTrue = true;
+  
+  // Dette er en string.
+  String hello = "Hello";
+
+  // This is 100 in binary.
+  int binaryVersionOf100 = 0b1100100;
+
+Koden over er ikke godt da den ikke forklare hvordan det bliver brugt, hvad det er der for, er unødvendigt og nogle gange for generaliseret.
