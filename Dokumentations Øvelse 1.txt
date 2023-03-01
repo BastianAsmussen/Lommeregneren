@@ -1,0 +1,19 @@
+Hvad er dokumentation?
+- Dokumentation er en måde at beskrive hvad et kodesegment gør.
+- En dårlig måde at dokumentere er f.eks. at skrive ”Dette er et stop skilt.”, ”Denne metode plusser a og b sammen.” eller ”Dette er getName() metoden.”.
+- God dokumentation forklarer hvorfor et en metode er der og hvad den gør ikke bare hvad navnet er.
+
+Hvordan ville jeg gribe dokumentation an?
+- Jeg ville starte med at overveje om den valgte metode er nødvendig at dokumentere, f.eks. hvis det er en metode til at plusse to tal, er den nok ikke nødvendig at dokumentere så længe den ikke har et dumt navn.
+
+Værktøjs valg:
+- Jeg ville ikke bruge andre værktøjer end mit IDE og muligvis stavekontrol for at sikre mig at jeg holder mig til en vis standard.
+
+Gruppemedlemmer:
+- Bastian Almar Wolsgaard Asmussen
+- Casper Agerskov Madsen
+
+Stikord:
+- Selvforklarende.
+- Naming conventions.
+- Concistency.
